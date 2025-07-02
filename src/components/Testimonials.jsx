@@ -3,12 +3,12 @@ import React from "react";
 const testimonials = [
   {
     quote: "Ramesh is a quick learner and an excellent problem solver. A great asset to any tech team!",
-    name: "Mridul Kakkar",
+    name: "Amit Verma",
     role: "Team Lead, GDG GCET",
   },
   {
     quote: "Outstanding performance month after month at Nothing Technology.",
-    name: "HR Panel[Diwakar Singh]",
+    name: "HR Panel",
     role: "Nothing Technology",
   },
   {
