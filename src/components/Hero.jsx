@@ -12,7 +12,8 @@ const Hero = () => (
       Hello, I'm <span className="text-blue-600">Ramesh Kumar</span>
     </h2>
     <p className="text-lg text-gray-600 max-w-xl mx-auto mb-6">
-      A passionate web developer specializing in React and modern web technologies.
+      I’m Ramesh Kumar, a Full Stack Developer and B.Tech IT student passionate about building scalable web applications using technologies like Node.js, React, MongoDB, and PHP.
+With 900+ bugs identified at Nothing Technology and multiple real-world projects, I’m actively growing to become a strong Software Development Engineer (SDE)
     </p>
     <a
       href="/resume.pdf"
