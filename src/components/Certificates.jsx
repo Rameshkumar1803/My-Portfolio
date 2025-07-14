@@ -22,7 +22,7 @@ const certificates = [
 ];
 
 const Certificates = () => (
-  <section id="certificates" className="py-20 px-4 bg-gray-100">
+  <section id="certificates" className="py-20 px-4 bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
     <h2
       className="text-3xl font-bold text-center text-blue-700 mb-12"
       data-aos="fade-up"
@@ -34,7 +34,7 @@ const Certificates = () => (
       {certificates.map((cert, idx) => (
         <div
           key={idx}
-          className="bg-white rounded-lg shadow-md p-4 text-center"
+          className="bg-white dark:bg-gray-800 p-4 text-black dark:text-white rounded-lg shadow-md"
           data-aos="zoom-out"
           data-aos-delay={cert.delay}
         >

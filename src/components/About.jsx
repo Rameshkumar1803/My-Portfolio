@@ -2,8 +2,7 @@ import React from "react";
 
 const About = () => (
   <section
-    id="about"
-    className="py-20 px-6 relative bg-gradient-to-br from-blue-50 via-white to-purple-100 overflow-hidden"
+    id="about" className="py-20 px-6 bg-gray-50 dark:bg-gray-800 text-black dark:text-white"
   >
     {/* Optional Blurred Background Circle */}
     <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200 opacity-30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse -z-10"></div>

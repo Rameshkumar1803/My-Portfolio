@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => (
   <section
     data-aos="zoom-in"
-    className="relative bg-white text-center py-24 px-4 flex flex-col items-center justify-center overflow-hidden"
+  className="relative bg-white dark:bg-gray-900 text-center py-20 px-4 flex flex-col items-center justify-center overflow-hidden text-black dark:text-white"
   >
     {/* Profile Image */}
     <img

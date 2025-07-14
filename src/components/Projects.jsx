@@ -41,11 +41,10 @@ const projects = [
 
 const Projects = () => (
   <section
-    id="projects"
-    className="relative py-24 px-4 bg-gradient-to-br from-blue-50 via-white to-gray-50 overflow-hidden"
+    id="projects" className="py-20 px-4 bg-gray-50 dark:bg-gray-900 text-black dark:text-white"
   >
     {/* Decorative Top Wave */}
-    <div className="absolute top-0 left-0 w-full -z-10">
+    <div className="bg-white dark:bg-gray-800 text-black dark:text-white ...">
       <svg
         viewBox="0 0 1440 320"
         className="w-full h-48 fill-blue-100 opacity-30"

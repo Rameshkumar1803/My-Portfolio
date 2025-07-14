@@ -22,7 +22,7 @@ const testimonials = [
 ];
 
 const Testimonials = () => (
-  <section id="testimonials" className="py-20 px-4 bg-white text-center">
+  <section  id="testimonials" className="py-20 px-4 text-center bg-gray-50 dark:bg-gray-900 text-black dark:text-white">
     <h2
       className="text-3xl font-bold mb-12 text-blue-700"
       data-aos="fade-up"
@@ -34,7 +34,7 @@ const Testimonials = () => (
       {testimonials.map((item, index) => (
         <div
           key={index}
-          className="bg-gray-100 p-6 rounded-lg shadow-md"
+          className="bg-white dark:bg-gray-800 p-6 text-black dark:text-white rounded-lg shadow"
           data-aos="zoom-in"
           data-aos-delay={item.delay}
         >
