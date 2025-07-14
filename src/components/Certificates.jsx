@@ -1,36 +1,54 @@
 import React from "react";
 
-const testimonials = [
+const certificates = [
   {
-    quote: "Ramesh is a quick learner and an excellent problem solver. A great asset to any tech team!",
-    name: "Mridul Kakkar",
-    role: "Team Lead, GDG GCET",
+    title: "The Joy Of Computing Using Python",
+    issuer: "NPTEL IIT [ROPAR]",
+    image: "/NPTEL_Python.png",
+    delay: "0",
   },
   {
-    quote: "Outstanding performance month after month at Nothing Technology.",
-    name: "HR Panel[Diwakar Singh]",
-    role: "Nothing Technology",
+    title: "Harvard Aspire Leadership Program",
+    issuer: "Harvard Business School",
+    image: "/Aspire.png",
+    delay: "1000",
   },
   {
-    quote: "His leadership and communication skills shone in the Aspire Leadership Program.",
-    name: "Mentor",
-    role: "Harvard Business School",
+    title: "Top Performer Award - Nothing Tech",
+    issuer: "Monthly Recognition (9x)",
+    image: "NothingTech.jpg",
+    delay: "2000",
   },
 ];
 
-const Testimonials = () => (
-  <section id="testimonials" className="py-20 px-4 bg-white">
-    <h2 className="text-3xl font-bold text-center text-blue-700 mb-12">Testimonials</h2>
+const Certificates = () => (
+  <section id="certificates" className="py-20 px-4 bg-gray-100">
+    <h2
+      className="text-3xl font-bold text-center text-blue-700 mb-12"
+      data-aos="fade-up"
+    >
+      Certificates
+    </h2>
+
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-      {testimonials.map((testi, idx) => (
-        <div key={idx} className="bg-gray-50 rounded-lg shadow-md p-6">
-          <p className="italic text-gray-700 mb-4">“{testi.quote}”</p>
-          <p className="font-semibold text-blue-800">{testi.name}</p>
-          <p className="text-sm text-gray-600">{testi.role}</p>
+      {certificates.map((cert, idx) => (
+        <div
+          key={idx}
+          className="bg-white rounded-lg shadow-md p-4 text-center"
+          data-aos="zoom-out"
+          data-aos-delay={cert.delay}
+        >
+          <img
+            src={cert.image}
+            alt={cert.title}
+            className="w-full h-48 object-contain mb-4"
+          />
+          <h3 className="text-xl font-semibold text-blue-700">{cert.title}</h3>
+          <p className="text-gray-600">{cert.issuer}</p>
         </div>
       ))}
     </div>
   </section>
 );
 
-export default Testimonials;
+export default Certificates;

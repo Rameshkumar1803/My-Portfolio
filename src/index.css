@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  body {
+  @apply bg-gradient-to-tr from-white via-blue-50 to-blue-100 min-h-screen;
+}
+
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

@@ -2,31 +2,44 @@ import React from "react";
 
 const testimonials = [
   {
-    quote: "Ramesh is a quick learner and an excellent problem solver. A great asset to any tech team!",
-    name: "Amit Verma",
-    role: "Team Lead, GDG GCET",
+    name: "Team Lead - GDG On Campus",
+    feedback:
+      "Ramesh is an outstanding developer. His ability to turn ideas into elegant UI is amazing.",
+    delay: "0",
   },
   {
-    quote: "Outstanding performance month after month at Nothing Technology.",
-    name: "HR Panel",
-    role: "Nothing Technology",
+    name: "Mentor - Aspire Leadership Program (Harvard)",
+  feedback:
+    "Ramesh demonstrated exceptional leadership and strategic thinking throughout the Aspire Program. He is proactive, collaborative, and leads with clarity and empathy.",
+  delay: "1000",
   },
   {
-    quote: "His leadership and communication skills shone in the Aspire Leadership Program.",
-    name: "Mentor",
-    role: "Harvard Business School",
+    name: "Mentor [Diwakar Singh] - Nothing Technology",
+    feedback:
+      "Awarded 9 times as Top Performer – his passion and consistency are unmatched.",
+    delay: "2000",
   },
 ];
 
 const Testimonials = () => (
-  <section id="testimonials" className="py-20 px-4 bg-white">
-    <h2 className="text-3xl font-bold text-center text-blue-700 mb-12">Testimonials</h2>
+  <section id="testimonials" className="py-20 px-4 bg-white text-center">
+    <h2
+      className="text-3xl font-bold mb-12 text-blue-700"
+      data-aos="fade-up"
+    >
+      Testimonials
+    </h2>
+
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-      {testimonials.map((testi, idx) => (
-        <div key={idx} className="bg-gray-50 rounded-lg shadow-md p-6">
-          <p className="italic text-gray-700 mb-4">“{testi.quote}”</p>
-          <p className="font-semibold text-blue-800">{testi.name}</p>
-          <p className="text-sm text-gray-600">{testi.role}</p>
+      {testimonials.map((item, index) => (
+        <div
+          key={index}
+          className="bg-gray-100 p-6 rounded-lg shadow-md"
+          data-aos="zoom-in"
+          data-aos-delay={item.delay}
+        >
+          <p className="text-gray-700 italic mb-4">"{item.feedback}"</p>
+          <h4 className="text-blue-800 font-semibold">{item.name}</h4>
         </div>
       ))}
     </div>
