@@ -11,13 +11,31 @@ const certificates = [
     title: "Harvard Aspire Leadership Program",
     issuer: "Harvard Business School",
     image: "/Aspire.png",
-    delay: "1000",
+    delay: "500",
   },
   {
     title: "Top Performer Award - Nothing Tech",
-    issuer: "Monthly Recognition (9x)",
+    issuer: "Nothing Technology Limited",
     image: "NothingTech.jpg",
+    delay: "1000",
+  },
+  {
+    title: "Node.js, Express, MongoDB Masterclass with real Projects",
+    issuer: "Udemy",
+    image: "/Men.jpg",
+    delay: "1500",
+  },
+  {
+    title: "Cyber Security",
+    issuer: "Udemy",
+    image: "/CS.jpg",
     delay: "2000",
+  },
+  {
+    title: "PHP",
+    issuer: "Udemy",
+    image: "/PHP.jpg",
+    delay: "2500",
   },
 ];
 

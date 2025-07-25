@@ -36,6 +36,17 @@ const projects = [
     github: "https://github.com/Rameshkumar1803?tab=repositories",
     demo: "https://github.com/Rameshkumar1803/react-url-shortener",
     delay: "1500",
+
+  },
+  {
+    title: "MealDb Explorer",
+    description: "A responsive React app that lets users search, filter, view, and favorite meals using the MealDB API, with dark mode, pagination, and live YouTube recipe support.",
+    tech: ["React", "JavaScript", "HTML/CSS", "Tailwind CSS", "React Router", "MealDB API", "React Toastify", "AOS", "LocalStorage"],
+    image: "/MealDb.png",
+    github: "https://github.com/Rameshkumar1803?tab=repositories",
+    demo: "https://github.com/Rameshkumar1803/MealDB-app",
+    delay: "2000",
+    
   },
 ];
 
